@@ -11,3 +11,9 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+@layer components {
+  .btn {
+    @apply bg-[#dcd6f1] rounded-full text-sm text-zinc-600 hover:ring-1 hover:ring-gray-300 focus:outline-none active:ring-gray-300 hover:shadow-xl w-36 h-10 transition-shadow;
+  }
+}
+
