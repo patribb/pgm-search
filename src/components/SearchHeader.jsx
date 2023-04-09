@@ -18,7 +18,7 @@ const SearchHeader = () => {
          <AiTwotoneSetting size={45} className="fill-orange-500 hover:scale-105 transition duration-150 bg-transparent p-2 hover:bg-zinc-200 rounded-full cursor-pointer" />
          <BsGrid3X3GapFill size={45} className="fill-purple-500 hover:scale-105 transition duration-150 bg-transparent p-2 hover:bg-zinc-200 rounded-full cursor-pointer" />
         </div>
-        <button className="bg-[#EF4C37] text-white px-4 py-2 rounded-full font-medium hover:scale-105 transition duration-200 hover:shadow-lg ml-2">Sign In</button>
+        <button className="bg-[#EF4C37]/80 text-sm text-white px-4 py-2 rounded-full font-medium hover:scale-105 transition duration-200 hover:shadow-lg ml-2">Sign In</button>
       </div>
       <SearchHeaderOptions />
     </header>

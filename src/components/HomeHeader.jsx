@@ -8,7 +8,7 @@ const HomeHeader = () => {
             <Link className="hover:underline text-zinc-600" target="_blank" href="https://mail.google.com">Gmail</Link>
             <Link className="hover:underline text-zinc-600" target="_blank" href="https://image.google.com">Images</Link>
             <BsGrid3X3GapFill size={50} className="fill-purple-500 hover:scale-105 transition duration-150 bg-transparent p-2 hover:bg-zinc-200 rounded-full cursor-pointer" />
-            <button className="bg-[#EF4C37] text-white px-4 py-2 rounded-full font-medium hover:scale-105 transition duration-200 hover:shadow-lg">Sign In</button>
+            <button className="bg-[#EF4C37]/90 text-white px-4 py-2 rounded-full font-medium hover:scale-105 transition duration-200 hover:shadow-lg">Sign In</button>
         </div>
     </header>
   )
