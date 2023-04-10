@@ -1,6 +1,8 @@
+import { WebSearchResults } from "@/components"
 import Link from "next/link"
 
 const WebSearchPage = async ({searchParams}) => {
+  await new Promise(r => setTimeout(r, 5000))
   const response = await fetch(`https://www.googleapis.com/customsearch/v1?key=${process.env.GOOGLE_API_KEY}&cx=${process.env.CONTEXT_KEY}&q=${searchParams.searchTerm}`)
   if (!response.ok) {
     throw new Error('Something went wrong')
@@ -20,11 +22,7 @@ const WebSearchPage = async ({searchParams}) => {
 
   return (
     <>
-    {results && results.map((result) => (
-      <div key={result.link}>
-        <h1>{result.title}</h1>
-      </div>
-    ))}
+    {results && <WebSearchResults results={data} />}
     </>
   )
 }

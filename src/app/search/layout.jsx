@@ -9,8 +9,8 @@ export const metadata = {
 export default function SearchLayout({ children }) {
   return (
     <div>
-        <SearchHeader />
-        {children}
+      <SearchHeader />
+      {children}
     </div>
   )
 }
